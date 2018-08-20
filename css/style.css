@@ -1,3 +1,17 @@
+/*=============================
+		Reset Styles
+=============================*/
+* {
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+  }
+html{
+    overflow-x: hidden;
+}
 body{
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
@@ -35,7 +49,7 @@ p{
 }
 a{
 color: #267df4;
-text-decoration: underline;
+text-decoration: none;
 outline: 0;
 }
 a:focus{
@@ -179,6 +193,7 @@ outline: none !important;
     font-size: 16px;
     text-decoration: none;
     text-transform: capitalize;
+    margin-left: 40px;
 }
 .side-menu ul li a:hover, .side-menu ul li a:focus{
     color: #267df4;
@@ -193,19 +208,27 @@ outline: none !important;
     color: white;
     line-height: 12px;
 }
-@media only screen and (max-height: 470px) {
+@media only screen and (max-height: 470px){
     .side-menu-footer{
         display: none;
     }
 }
+.craft{
+    text-decoration: none;
+}
+.craft:hover{
+    text-decoration: none;
+}
 #socials{
     list-style: none;
-    margin: 18px 0 0;
+    margin: 0px;
     padding: 0px;
+    transform: translate(-5px, 0);
+    -webkit-transform: translate(-40px, 0);
 }
 #socials li{
     display: inline-block;
-    margin: 0 20px 0 0;
+    margin: 0px;
 }
 #socials li:last-child{
     margin-right: 0px;
@@ -381,61 +404,54 @@ header img{
     }
 }
 
-/*Beautiful Interface*/
-#beautiful-interface{
-    height: 100%;
+/*=============================
+		Iphone Screens
+=============================*/
+#iphone-screens{
     background-color: #f5f5f8;
+    padding: 140px 0px 80px;
+    position: relative;
+    overflow: hidden;
 }
-#beautiful-interface .begining h2{
-    margin-top: 100px;
-    text-transform: capitalize;
+#iphone-screens h2{
+    margin-bottom: 0px;
     font-family: "Varela Round", sans-serif;
 }
-#beautiful-interface .begining hr{
-    background-color: #267df4;
-    width: 5%;
-    margin: 40px auto;
+#iphone-screens hr{
+    width: 50px;
     height: 2px;
+    background-color: #267df4;
+    margin: 40px auto;
 }
-#beautiful-interface .begining p{
-    text-transform: uppercase;
+#iphone-screens p{
     font-size: 12px;
     letter-spacing: 0.1em;
-    font-weight: 600;
-    line-height: 28px;
-    color: #8c8f94;
-    margin-bottom: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-#beautiful-interface .unordered-list{
-    list-style: none;
+#iphone-screens #images-showcase{
+    margin-top: 50px;
 }
-#beautiful-interface .unordered-list li{
+#iphone-screens #images-showcase #images-list{
+    display: block;
+}
+#iphone-screens #images-showcase #images-list li{
     display: inline-block;
-    margin-top: 30px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 0px 5px;
+    max-width: 50%;
+}
+  #iphone-screens #images-showcase #images-list li img{
+    max-width: 100%;
+}
+  #iphone-screens #images-showcase #images-list li:first-child{
+    margin-left: -190px;
+}
+  #iphone-screens #images-showcase #images-list li:last-child{
+    margin-right: -190px;
+}
+  #iphone-screens #images-showcase #images-list li:nth-child(1), #iphone-screens #images-showcase #images-list li:nth-child(2), #iphone-screens #images-showcase #images-list li:nth-child(4), #iphone-screens #images-showcase #images-list li:nth-child(5){
+    -webkit-box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
     box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
-}
-#beautiful-interface .unordered-list li:first-child{
-    margin-left: -250px;
-}
-#beautiful-interface .unordered-list li:last-child{
-    margin-right: -220px;
-}
-@media only screen and (max-width: 1000px) {
-    #beautiful-interface .unordered-list li:first-child{
-        margin: 0px;
-        margin-top: 30px;
-    }
-}
-@media only screen and (max-width: 1000px) {
-    #beautiful-interface .unordered-list li:last-child{
-        margin: 0px;
-        margin-top: 30px;
-    }
-}
-#beautiful-interface .unordered-list li:nth-child(3){
-    box-shadow: 0px 0px 0px 0px;
 }
 
 /*Smart Phone*/
@@ -474,6 +490,11 @@ header img{
     font-size: 16px;
     outline: none;
 }
+@media only screen and (max-width: 700px) {
+    #smartPhone .form .mail{
+        font-size: 12px;
+    }
+}
 #smartPhone .form p{
     margin-top: 35px;
     margin-bottom: 20px;
@@ -483,3 +504,596 @@ header img{
     letter-spacing: 0.1em;
     font-weight: 700;
 }
+#smartPhone .download-btn{
+    margin: 10px 0px 100px 0px;
+}
+#smartPhone .download-btn .btn{
+    font-size: 12px;
+    margin: 0px;
+}
+#smartPhone .download-btn .btn-dark{
+    padding: 9px 28px;
+    background-color: #131315;
+    color: white;
+}
+#smartPhone .download-btn .btn-dark:hover{
+    background-color: #f5f5f8;
+    color: #26272d;
+    border: 1px solid #26272d;
+}
+#smartPhone .download-btn .btn-dark #apple{
+    font-size: 32px;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 18px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+#smartPhone .download-btn .btn-dark span{
+    font-size: 12px;
+    display: inline-block;
+    text-align: left;
+}
+#smartPhone .download-btn .btn-dark span b{
+    font-size: 22px;
+    line-height: 18px;
+}
+
+/*=============================
+		Customers
+=============================*/
+#customers {
+    padding: 120px 0;
+  }
+  #customers i {
+    color: #8c8f94;
+    font-size: 22px;
+  }
+  #customers .carousel-indicators {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    z-index: 5;
+    left: 0;
+    margin-left: 0;
+  }
+  #customers .carousel-indicators li {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin: 0;
+    border: none;
+    opacity: .2;
+    transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -webkit-transition: all 0.97s cubic-bezier(0.545, 0, 0.05, 1);
+    transition: all 0.97s cubic-bezier(0.545, 0, 0.05, 1);
+  }
+  #customers .carousel-indicators li img {
+    margin-top: -20px;
+    position: relative;
+    border-radius: 100%;
+    z-index: 22;
+    -webkit-box-shadow: 0px 12px 30px 0px rgba(92, 95, 101, 0.18);
+    box-shadow: 0px 12px 30px 0px rgba(92, 95, 101, 0.18);
+  }
+  #customers .carousel-indicators li.active {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+    margin-top: 20px;
+  }
+  #customers .carousel-indicators li:first-child {
+    float: left;
+    margin-left: 30px;
+  }
+  #customers .carousel-indicators li:first-child img {
+    -webkit-box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
+    box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
+  }
+  #customers .carousel-indicators li:last-child {
+    float: right;
+    margin-right: 30px;
+  }
+  #customers .carousel-indicators li:last-child img {
+    -webkit-box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
+    box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
+  }
+  #customers .item.active {
+    background-color: #fff !important;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+  #customers .testimonial {
+    padding-top: 174px;
+  }
+  #customers .testimonial .star-rating {
+    color: #8c8f94;
+    font-size: 22px;
+    margin-top: 17px;
+  }
+  #customers .testimonial .star-rating .gold-star {
+    color: #f2bc3b;
+  }
+  #customers .testimonial .customer-name {
+    margin-top: 56px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #26272d;
+  }
+  #customers .carousel-control.left, #customers .carousel-control.right {
+    background: none;
+    width: 41px;
+    height: 41px;
+    top: 45px;
+    line-height: 41px;
+    color: #8c8f94;
+    text-decoration: none;
+    font-size: 28px;
+  }
+  #customers .carousel-control.left {
+    left: -200px;
+  }
+  #customers .carousel-control.right {
+    right: -200px;
+  }
+  
+  /*=============================
+              Plans
+  =============================*/
+  #plan {
+    padding: 160px 0;
+    background-color: #f4f4f5;
+  }
+  #plan .toggle-container {
+    margin-bottom: 70px;
+  }
+  #plan .toggle-container .switch-toggles {
+    position: relative;
+    width: 262px;
+    height: 50px;
+    border: 1px solid #8c8f94 !important;
+    border-radius: 30px;
+  }
+  #plan .toggle-container .switch-toggles .individual, #plan .toggle-container .switch-toggles .company {
+    position: relative;
+    width: 130px;
+    float: left;
+    padding: 13px 5px;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 16px;
+    color: #8c8f94;
+    -webkit-transition: color 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+    transition: color 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  }
+  #plan .toggle-container .switch-toggles .company {
+    position: absolute;
+    right: 0px;
+  }
+  #plan .toggle-container .switch-toggles .individual.active, #plan .toggle-container .switch-toggles .company.active {
+    color: #26272d;
+  }
+  #plan .toggle-container .switch-toggles:after {
+    position: absolute;
+    content: "";
+    width: 122px;
+    height: 42px;
+    background: #fff;
+    left: 3px;
+    top: 3px;
+    border-radius: 30px !important;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
+    -moz-box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
+    -webkit-box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
+    -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+    transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  }
+  #plan .toggle-container .switch-toggles.active:after {
+    left: 135px;
+    top: 3px;
+  }
+  #plan .info {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  #plan .price-table {
+    position: relative;
+    width: 340px;
+    max-width: 50%;
+    float: left;
+    padding: 20px 0;
+  }
+  #plan .price-table .table-inner {
+    background-color: #ebebed;
+    padding: 40px 15px 50px;
+  }
+  #plan .price-table .table-inner h3 {
+    margin: 0 auto 28px;
+  }
+  #plan .price-table .table-inner .price {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #26272d;
+    padding: 9px 18px;
+    border: 1px solid rgba(38, 39, 45, 0.2);
+    display: inline-block;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+  }
+  #plan .price-table .table-inner .phrase {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 38px;
+  }
+  #plan .price-table .table-inner .feature-list li {
+    font-size: 16px;
+    line-height: 24px;
+    color: #26272d;
+    margin-bottom: 12px;
+  }
+  #plan .price-table .table-inner .feature-list li i {
+    color: #6fc754;
+  }
+  #plan .price-table .table-inner .feature-list li:last-child {
+    margin-bottom: 34px;
+  }
+  #plan .price-table .table-inner .btn {
+    width: 210px;
+    max-width: 100%;
+  }
+  #plan .price-table .table-inner .btn-blue {
+    background-color: transparent;
+    border: 1px solid #267df4;
+    color: #267df4;
+  }
+  #plan .price-table .table-inner .btn-blue:hover {
+    color: #267df4 !important;
+  }
+  #plan .price-table.highlighted {
+    z-index: 2;
+    padding: 0;
+    -webkit-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+    box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+  }
+  #plan .price-table.highlighted .table-inner {
+    background-color: #fff;
+    padding: 60px 15px 70px;
+  }
+  #plan .price-table.highlighted .btn-blue {
+    background-color: #267df4;
+    color: #fff;
+  }
+  #plan .price-table.highlighted .btn-blue:hover {
+    color: #267df4 !important;
+    border: 1px solid #267df4 !important;
+    background-color: transparent;
+  }
+  #plan #price_tables .individual, #plan #price_tables .company {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    transition: opacity 0.97s, -webkit-transform 0.97s;
+    -webkit-transition: opacity 0.97s, -webkit-transform 0.97s;
+    transition: opacity 0.97s, transform 0.97s;
+    -webkit-transition: opacity 0.97s, -webkit-transform 0.97s, -webkit-transform 0.97s;
+    transition: opacity 0.97s, transform 0.97s, -webkit-transform 0.97s;
+    -webkit-transition-timing-function: cubic-bezier(0.545, 0, 0.05, 1);
+    transition-timing-function: cubic-bezier(0.545, 0, 0.05, 1);
+  }
+  #plan #price_tables .individual .price-table, #plan #price_tables .company .price-table {
+    display: none;
+  }
+  #plan #price_tables .individual.active, #plan #price_tables .company.active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  #plan #price_tables .individual.active .price-table, #plan #price_tables .company.active .price-table {
+    display: block;
+  }
+  
+  /*=============================
+             subscripe
+  =============================*/
+  #subscribe {
+    padding: 90px 0px 50px;
+  }
+  #subscribe .btn {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  #subscribe .btn-green:hover, #subscribe .btn-green:focus {
+    background-color: #6fc754;
+    border: 1px solid transparent;
+    color: white !important;
+  }
+  #subscribe p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  /*=============================
+             Footer
+  =============================*/
+  #footer {
+    color: #8c8f94;
+    font-size: 16px;
+  }
+  #footer .footer-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  #footer .copyright-container {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  #footer .logo {
+    margin-bottom: 36px;
+  }
+  #footer p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #footer .app_download img {
+    margin-top: 6px;
+  }
+  #footer ul li .title {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #26272d;
+    font-size: 12px;
+  }
+  #footer ul li a {
+    color: #8c8f94;
+    text-decoration: none;
+    line-height: 36px;
+  }
+  #footer ul li a:hover {
+    color: #267df4;
+  }
+  #footer .socials {
+    margin-top: 20px;
+  }
+  #footer .socials li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  #footer .socials li a {
+    color: #8c8f94;
+    -webkit-transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+    transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+  }
+  #footer .socials li a:hover {
+    color: #26272d;
+  }
+  #footer .socials li:last-child {
+    margin-right: 0px;
+  }
+  #footer .more-info {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  #footer .made-by {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #26272d;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  #footer .made-by a img {
+    margin-top: -8px;
+    margin-left: 8px;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    /*** Nav ***/
+    #nav .col-md-4:first-child,
+    #nav .col-md-4:last-child {
+      display: none;
+    }
+    #nav .logo {
+      padding-top: 0px;
+    }
+    #nav #slide_out_menu {
+      position: fixed;
+      display: block;
+      width: 300px;
+      height: 100%;
+      left: -300px;
+    }
+    #nav #slide_out_menu .menu-close {
+      top: 41px;
+    }
+  
+    /*** Features ***/
+    #features {
+      padding: 100px 0;
+    }
+    #features .feature-item {
+      margin-bottom: 80px;
+    }
+    #features .feature-item:last-child {
+      margin-bottom: 0;
+    }
+    #features .feature {
+      padding: 0px 0px;
+    }
+    #features .feature .feature-icon {
+      margin-bottom: 48px;
+    }
+    #features .feature .feature-icon i {
+      font-size: 42px;
+      color: #267df4;
+    }
+  
+    /*** iPhone Feature ***/
+    #iphone-feature {
+      padding: 80px 0 60px;
+    }
+    #iphone-feature #iphone-showcase {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      padding: 0 15px;
+      margin-top: 64px;
+    }
+    #iphone-feature #iphone-showcase img {
+      width: 100%;
+    }
+  
+    /*** Map Feature ***/
+    #map-feature {
+      padding: 80px 0 100px;
+    }
+    #map-feature #map-showcase {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      padding: 0 15px;
+      margin-top: 64px;
+    }
+    #map-feature #map-showcase img {
+      width: 100%;
+    }
+  
+    /*** iPhone Screens ***/
+    #iphone-screens {
+      padding: 120px 0 80px;
+    }
+    #iphone-screens #images-showcase #images-list {
+      display: block;
+    }
+    #iphone-screens #images-showcase #images-list li {
+      width: 240px;
+      display: inline-block;
+      margin: 0px 5px;
+    }
+    #iphone-screens #images-showcase #images-list li img {
+      max-width: 100%;
+    }
+    #iphone-screens #images-showcase #images-list li .main-img {
+      width: 295px;
+    }
+  
+    /*** Customers ***/
+    #customers .carousel-control.left, #customers .carousel-control.right {
+      display: none;
+    }
+  
+    /*** Plan ***/
+    #plan {
+      padding: 120px 0 150px;
+    }
+    #plan #price_tables .individual.active, #plan #price_tables .company.active {
+      margin-top: 80px;
+    }
+    #plan .toggle-container .switch-toggles .individual, #plan .toggle-container .switch-toggles .company {
+      margin-top: 0px;
+    }
+  
+    /*** Footer ***/
+    #footer .socials {
+      margin-bottom: 60px;
+    }
+    #footer .footer-links {
+      margin-bottom: 30px;
+    }
+    #footer .footer-links:last-child {
+      margin-bottom: 0;
+    }
+    #footer .copyright-container .text-right {
+      text-align: left;
+      margin-top: 22px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /*** iPhone Screens ***/
+    #iphone-screens {
+      padding: 120px 0 80px;
+    }
+    #iphone-screens #images-showcase #images-list {
+      display: block;
+    }
+    #iphone-screens #images-showcase #images-list li {
+      width: 180px;
+      display: inline-block;
+      margin: 0px 10px;
+    }
+    #iphone-screens #images-showcase #images-list li img {
+      max-width: 100%;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    input[type="text"],
+    input[type="email"] {
+      padding: 16px 26px;
+    }
+  
+    /*** Header ***/
+    #header {
+      padding: 160px 0 460px;
+    }
+    #header .header_iphone {
+      bottom: -220px;
+      margin-left: -140px;
+      width: 280px;
+    }
+  
+    /*** iPhone Screens ***/
+    #iphone-screens {
+      padding: 120px 0 80px;
+    }
+    #iphone-screens #images-showcase #images-list {
+      display: block;
+      margin: 0 auto;
+    }
+    #iphone-screens #images-showcase #images-list li {
+      width: 160px;
+      display: inline-block;
+      margin: 0px 2px;
+    }
+    #iphone-screens #images-showcase #images-list li img {
+      max-width: 100%;
+    }
+    #iphone-screens #images-showcase #images-list li:first-child, #iphone-screens #images-showcase #images-list li:last-child {
+      display: none;
+    }
+  
+    /*** Ready to Buy  ***/
+    #ready-to-buy .form-group .btn,
+    #subscribe .form-group .btn {
+      position: relative;
+      margin-top: 14px;
+    }
+  
+    /*** Customers ***/
+    #customers {
+      padding: 120px 0;
+    }
+    #customers .carousel-indicators li {
+      width: 90px;
+      height: 90px;
+    }
+  }
